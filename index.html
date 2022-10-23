@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Doutor Nature</title>
 </head>
@@ -17,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex flex-column justify-content-around align-items-center home w-100">
+        <div class="d-flex flex-column justify-content-around align-items-center home w-100" id="home">
             <h1 class="titulo mt-5">O jeito certo de hidratar a pele tipo "crepe"</h1>
             <h3 class="sub_titulo_home ">E porque a industria de cosméticos nunca falou sobre isso...</h3>
             <iframe class="video_home" src="https://www.youtube.com/embed/dZJbORri0ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -27,21 +31,21 @@
                 </svg>
             </a>
         </div>
-        <div class="container flex-column page_2" id="2">
-            <h2 class="titulo w-75">Porque cremes não hidratam esse tipo de pele "crepe"?</h2>
+        <div class="d-flex flex-column justify-content-center align-items-center page_2" id="2">
+            <h2 class="titulo">Porque cremes não hidratam esse tipo de pele "crepe"?</h2>
             <h3 class="fs-2 sub_titulo2">Descubra uma alternativa mais eficiente.</h3>
-            <div class=" mt-5">
-                    <p class=" paragrafo mb-5 ">
+            <div class="container mt-5">
+                    <p class=" paragrafo">
                         Em minhas pesquisas descobri que <span class="destaque_texto">cremes hidratantes comuns, não funcionam
                         em peles finas e ressecadas,</span> com aparência amassada, que popularmente são
                         chamadas de "pele crepe.
                     </p>
-                    <p class=" paragrafo mb-5">
+                    <p class=" paragrafo">
                         A razão disso é <span class="destaque_texto"> existem pequenas rachaduras na superfície desse tipo
                         de pele</span>, por onde a água vaza. Dessa forma, <span class="destaque_texto">não adianta insistir aplicando
                         cremes hidratantes</span>, pois sua pele não vai reter essa hidratação.
                     </p>
-                    <p class=" paragrafo mb-5">
+                    <p class=" paragrafo">
                         Já quando você ingere alguns compostos específicos, e passa a hidratar sua pele 
                         de dentro para fora, <span class="destaque_texto">aí o jogo vira a seu favor. Active Anti Ox</span> é uma fórmula que 
                         desenvolvi junto de minha equipe, para ajudar a hidratar e recuperar a sua pele
@@ -57,56 +61,75 @@
             </div>
             <img class="imagem_doutor" src="./asset/img/doutor-rafael.png" alt="" >
         </div>
-        <div class="page_3 d-flex justify-content-center align-items-center" id="3">
-            <div class=" mb-4 card_1 rounded-3 shadow-sm">
-                <div class="card-header d-flex justify-content-center py-3">
-                    <h4 class="card-header-texto">ESCOLHA SEU PACOTE</h4>
-                </div>
-                <div class="card-body ">
-                    <div class="d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="selecao_botao" name="selecao_plano"id="plano1" autocomplete="off" >
-                        <label for="palno1" class="label_selecao">1 CAIXA</label>
-                        <input type="radio" class="selecao_botao" name="selecao_plano" id="plano2" autocomplete="off" checked>
-                        <label for="palno2" class="label_selecao">3 CAIXA</label>
-                        <input type="radio" class="selecao_botao" name="selecao_plano"id="plano3" autocomplete="off">
-                        <label for="palno3" class="label_selecao">6 CAIXA</label>
+
+        <div class="page_3 d-flex flex-column justify-content-center align-items-center" id="3">
+            <span class="antes_titulo_page_3">OFERTA ÚNICA</span>
+            <h2 class="titulo">Você não verá preço menor em outro lugar</h2>
+            <div class="d-flex align-items-center">
+                <div class=" mb-4 card_1 shadow-MD">
+                    <div class="card_header d-flex justify-content-center py-3">
+                        <h4 class="card-header-texto">ESCOLHA SEU PACOTE</h4>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-center" role="group">
+                            <input type="radio" class="selecao_botao" value="1" name="selecao_plano"id="plano1" autocomplete="off">
+                            <label for="plano1" class="label_selecao">
+                                <span class="numero_card_selecao">1</span> 
+                                CAIXA
+                            </label>
+                            <input type="radio" class="selecao_botao" value="3" name="selecao_plano" id="plano2" autocomplete="off" checked>
+                            <label for="plano2" class="label_selecao" checked>
+                                <span class="numero_card_selecao">3</span>
+                                CAIXAS
+                            </label>
+                            <input type="radio" class="selecao_botao" value="6" name="selecao_plano"id="plano3" autocomplete="off">
+                            <label for="plano3" class="label_selecao">
+                                <span class="numero_card_selecao">6</span> 
+                                CAIXAS
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center precos">
+                                <span class="preco">R$ <span id="preco_por_caixa">148,60</span> por caixa</span>
+                                <span class="economia">Economize R$ <span id="desconto">136,20</span></span>
+                                <span class="preco">HOJE: <span class="fw-light">12x</span> R$ <span id="preco_dividido">49,99</span></span>
+                                <span class="economia">ou R$ <span id="preco_a_vista">445,80</span> á vista</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer d-flex justify-content-center">
+                        <button type="button" class="botao_card">Comprar Agora</button>
+                    </div>
+                </div>
+                <div class="card_2 ">
+                    <span class="badge_card2"></span>
+                    <div class="card_header d-flex justify-content-center py-3">
+                        <h4 class="card-header-texto">ASSINE E ECONOMIZE (OPCIONAL)</h4>
+                    </div>
+                    <div class="card_body">
+                        <ul class="lista_card">
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Desconto Máximo Aplicado</li>
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Entrega Automatica em sua Casa</li>
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Menor Preço Garantido / Sem Reajuste</li>
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Cancele quando quiser / Sem Taxas</li>
                         </ul>
                     </div>
-                </div>
-                <div class="card_footer d-flex justify-content-center">
-                    <button type="button" class="btn btn-lg btn-primary">Get started</button>
-                </div>
-            </div>
-            <div class="card_2 mb-4 rounded-3 shadow-sm">
-                <div class="card-header d-flex justify-content-center py-3">
-                    <h4 class="card-header-texto">ESCOLHA SEU PACOTE</h4>
-                </div>
-                <div class="card-body">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Default checkbox
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Checked checkbox
+                    <div class="card_footer d-flex justify-content-center">
+                        <label for="assinatura" class="label_assinatura">
+                            <span id="check" class="checkbox_card desmarcada"></span>
+                            <input type="checkbox" name="assinatura" id="assinatura">
+                            <strong>SIM!</strong> Eu quero ser assinante e ganhar DESCONTO!
                         </label>
                     </div>
                 </div>
-                <div class="card_footer d-flex justify-content-center">
-                    <button type="button" class="btn btn-lg btn-primary">Get started</button>
-                </div>
             </div>
+            <a href="#4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </a>
         </div>
+
         <div id="4" class="page_4 d-flex flex-column align-items-center">
             <h2 class="titulo">Se não notar resultador, sua compra sai de graça</h2>
             <h3 class="sub_titulo2 fs-2 mb-5">Sem perguntas, sem pegadinhas...</h3>
@@ -134,25 +157,178 @@
                 </div>
             </div>
             <p class="observacao">*Somos honestos e transparentes com nossos clientes, os resultados podem variar de pessoa para pessoa, cada organismo é único e val reagir aos compostos de forma diferente. Aproveite a nossa garantia incondicional, compre e avalie você mesmo os resultados. Esta fórmula foi desenvolvida por médico e sua equipe de pesquisadores.</p>
+            <a href="#5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </a>
         </div>
-        <div id="5" class="page_5">
-            <h2>Tire suas dúvidas</h2>
-            <ul>
-                <li>Do que é feito o Active Anti_OX?</li>
-                <li>Como devo Usar o Active Anti-OX?</li>
-                <li>Active Anti-OX tem conta_indicação?</li>
-                <li>Precisa de prescrição médica para comprar?</li>
-                <li>E se Active Anti-OX não funcionar para min?</li>
-                <li>Quando posso perceber resultados?</li>
-                <li>Além do Vital 4k o que mais vou receber na minha compra?</li>
-                <li>Vocês tem uma garantia de satisfação?</li>
-            </ul>
+
+        <div id="5" class="page_5 d-flex flex-column align-items-center">
+            <h2 class="titulo">Tire suas dúvidas</h2>
+            <section>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Do que é feito o Active Anti_OX?
+                    </summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magnam quam quos nam rerum soluta dolorum nihil placeat laboriosam, deserunt, consequatur fuga quasi assumenda! Veniam dolor autem assumenda provident impedit!</p>
+                </details>
+                <hr class="linha">
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Como devo Usar o Active Anti-OX?
+                    </summary>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea vitae esse ipsam maiores, ipsum reiciendis architecto voluptas dolores natus velit molestias magni sequi eligendi non ullam aut perferendis nemo fugiat!</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Active Anti-OX tem conta_indicação?
+                    </summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt culpa blanditiis suscipit dignissimos. Expedita, debitis unde harum autem illum distinctio adipisci, voluptas voluptatum laborum, temporibus quo rerum nobis impedit?</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Precisa de prescrição médica para comprar?
+                    </summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequuntur deserunt voluptas modi tempore fuga architecto, nulla pariatur libero laborum adipisci autem eveniet possimus repudiandae sapiente aperiam, sint eaque error.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        E se Active Anti-OX não funcionar para min?
+                    </summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit architecto non aperiam, fugiat eos aliquid nemo, animi amet ab hic adipisci nisi dolores. Neque debitis consectetur, repellendus esse nemo at!</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Quando posso perceber resultados?
+                    </summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ad impedit odit illo possimus similique perferendis iusto, quod facere veritatis vero, nesciunt id reiciendis officia labore delectus nostrum? Iusto, mollitia!</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Além do Vital 4k o que mais vou receber na minha compra?
+                    </summary>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, aliquid quos modi nisi et perspiciatis eum nihil necessitatibus at quo rerum labore quia asperiores veniam quasi officiis reprehenderit. Officia, esse?</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>
+                        <i class="bi bi-plus"></i>
+                        Vocês tem uma garantia de satisfação?
+                    </summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolore vitae cupiditate officia consequatur repellendus corporis eum corrupti a sint quisquam doloribus maiores nostrum, deserunt voluptate quidem. Suscipit, itaque vero?</p>
+                </details>
+                <hr>
+            </section>
+            <a href="#6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div id="6" class="page_6 d-flex flex-column align-items-center">
+            <h2 class="titulo">O melhor suplemento para hidratar sua pele</h2>
+            <h3 class="sub_titulo2">hidratação de verdade</h3>
+            <div class="caixa_textos d-flex align-items-center ">
+                <div class="lado_esquerdo">
+                    <p>Os ingredientes poderosos do Active Anti OX trabalham juntos para:</p>
+                    <ul>
+                        <li>Devolver a firmeza na pele crepe</li>
+                        <li>Prencher as rugas e rachaduras da superfície de pele</li>
+                        <li>Reduzir linhas finas do rosto, pescoço e colo</li>
+                        <li>Restabelecer o brilho natural da pele</li>
+                        <li>Hidratando a pele, de dentro para fora</li>
+                    </ul>
+                </div>
+                <div class="lado_direito">
+                    <img src="/asset/img/image11.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <div class=" mb-4 card_1 shadow-MD">
+                    <div class="card_header d-flex justify-content-center py-3">
+                        <h4 class="card-header-texto">ESCOLHA SEU PACOTE</h4>
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-center" role="group">
+                            <input type="radio" class="selecao_botao" value="1" name="selecao_plano2"id="plano4" autocomplete="off">
+                            <label for="plano4" class="label_selecao">
+                                <span class="numero_card_selecao">1</span> 
+                                CAIXA
+                            </label>
+                            <input type="radio" class="selecao_botao" value="3" name="selecao_plano2" id="plano5" autocomplete="off" checked>
+                            <label for="plano5" class="label_selecao" checked>
+                                <span class="numero_card_selecao">3</span>
+                                CAIXAS
+                            </label>
+                            <input type="radio" class="selecao_botao" value="6" name="selecao_plano2"id="plano6" autocomplete="off">
+                            <label for="plano6" class="label_selecao">
+                                <span class="numero_card_selecao">6</span> 
+                                CAIXAS
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center precos">
+                                <span class="preco">R$ <span id="preco_por_caixa2">148,60</span> por caixa</span>
+                                <span class="economia">Economize R$ <span id="desconto2">136,20</span></span>
+                                <span class="preco">HOJE: <span class="fw-light">12x</span> R$ <span id="preco_dividido2">49,99</span></span>
+                                <span class="economia">ou R$ <span id="preco_a_vista2">445,80</span> á vista</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer d-flex justify-content-center">
+                        <button type="button" class="botao_card">Comprar Agora</button>
+                    </div>
+                </div>
+                <div class="card_2 ">
+                    <span class="badge_card2"></span>
+                    <div class="card_header d-flex justify-content-center py-3">
+                        <h4 class="card-header-texto">ASSINE E ECONOMIZE (OPCIONAL)</h4>
+                    </div>
+                    <div class="card_body">
+                        <ul class="lista_card">
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Desconto Máximo Aplicado</li>
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Entrega Automatica em sua Casa</li>
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Menor Preço Garantido / Sem Reajuste</li>
+                            <li><span class="iten_card desmarcada" id="iten_card"></span>Cancele quando quiser / Sem Taxas</li>
+                        </ul>
+                    </div>
+                    <div class="card_footer d-flex justify-content-center">
+                        <label for="assinatura" class="label_assinatura">
+                            <span id="check" class="checkbox_card desmarcada"></span>
+                            <input type="checkbox" name="assinatura" id="assinatura">
+                            <strong>SIM!</strong> Eu quero ser assinante e ganhar DESCONTO!
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="observacao">Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença, os resultados podem variar de pessoa para pessoa, esses depoimentos podem ser fictícios, esta informação não constitui aconselhamento medico e não deve ser considerada como tal, consulte o seu medico antes de modificar o seu regime médico regular. Este é um advertorial e não um artigo de notícia ou blog. Produto dispensado da obrigatoriedade de registro conforme RDC 27/2010</p>
         </div>
 
     </main>
-    <footer>
-
+    <footer class="d-flex justify-content-center">
+        <div class="d-flex justify-content-between rodape">
+            <a class="navbar-brand" href="#home">
+                <img  src="asset/img/logo_footer-DoutorNature.svg" alt="" srcset="">
+            </a>
+            <p class="texto_rodape">&copy; 2022 Doutor Nature - Todos os direitos Reservados - <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/asset/js/index.js"></script>
 </body>
 </html>
