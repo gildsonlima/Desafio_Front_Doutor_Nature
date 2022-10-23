@@ -48,7 +48,7 @@ strong{
 }
 
 .home{
-    overflow: scroll;
+    
 }
 
 nav{
@@ -78,7 +78,7 @@ nav{
 }
 
 .page_2{
-    overflow: scroll;
+    
     height: 100vh;
     position: relative;
 }
@@ -107,7 +107,7 @@ nav{
 }
 
 .page_3{
-    overflow: scroll;
+    
     position: relative;
     background-color: var(--cinza-escuro);
     padding-bottom: 3VH;
@@ -350,7 +350,7 @@ input[type="radio"]:checked + .label_selecao {
     width: 100%;
 }
 .page_4{
-    overflow: scroll;
+    
 }
 
 .page_4 .titulo{
@@ -385,7 +385,7 @@ input[type="radio"]:checked + .label_selecao {
 }
 
 .page_5{
-    overflow: scroll;
+    
     background-color: var(--cinza-escuro);
     color: var(--branco);
 }
@@ -422,7 +422,7 @@ input[type="radio"]:checked + .label_selecao {
 }
 
 .page_6 {
-    overflow: scroll;
+    
     font-size: 3.2vh;
     color: var(--cinza2);
 }
