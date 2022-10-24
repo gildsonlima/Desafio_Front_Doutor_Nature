@@ -60,7 +60,7 @@ nav{
     z-index: 1;
     box-shadow: 0px 5px 15px -5px var(--cinza2);
     -moz-box-shadow: 0px 3px 15px -5px var(--cinza2);
-    -webkit-box-shadow: 0px 3px 15px -5px varce(--cinza2);
+    -webkit-box-shadow: 0px 3px 15px -5px var(--cinza2);
 }
 
 .home{
@@ -118,8 +118,9 @@ nav{
     font-size: 2.6vh;
     width: 75%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    margin-bottom: 3vh;
+    color: #000;
+    font-weight: 200;
+    margin-bottom: 2vh;
 }
 
 .destaque_texto{
@@ -139,7 +140,7 @@ nav{
     
     position: relative;
     background-color: var(--cinza-escuro);
-    padding-bottom: 3VH;
+    padding-bottom: 3vh;
 }
 .antes_titulo_page_3{
     margin-top: 9vh;
