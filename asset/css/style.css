@@ -19,12 +19,13 @@
     --cinza-medio:#E6E7E7;
     --branco:white;
     --verde:#1FA628;
-    /* overflow: hidden; */
 }
 
 
-body{
+html{
+    min-width: 1400px;
     max-width: 1777px;
+    min-height: 678px;
     background-color: var(--branco);
 }
 
@@ -72,7 +73,7 @@ nav{
     font-size: 6vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: var(--cinza-titulo);
+    color: var(--cinza);
     width: 100vw;
     text-align: center;
 }
@@ -164,13 +165,13 @@ nav{
 .card_1{
     height: 55vh;
     width: 55vh;
-    background-color: var(--cinza-Claro);
+    background-color: var(--branco);
     z-index: 5;
     position: relative;
     border-radius: 15px;
-    box-shadow: 0px 10px 10px -2px var(--cinza2);
-    -moz-box-shadow: 0px 10px 10px -2px var(--cinza2);
-    -webkit-box-shadow: 0px 10px 10px -2px var(--cinza2);
+    box-shadow: 0 0 10px -5px var(--cinza);
+    -moz-box-shadow: 0 0 10px -5px var(--cinza);
+    -webkit-box-shadow: 0 0 10px -5px var(--cinza);
 }
 .cards{
     margin-bottom: 8vh;
@@ -181,6 +182,7 @@ nav{
 }
 
 .card-header-texto{
+    font-family: 'Roboto', sans-serif;
     font-size: 3vh;
     border-radius: 10px;
     text-align: center;
@@ -190,6 +192,11 @@ nav{
     vertical-align: middle;
     min-height: 7.5vh;
     width: 90%;
+    opacity: 0.9;
+}
+
+.card_1 .card-header-texto{
+    padding-top: 2vh;
 }
 
 input[type="radio"]{
@@ -359,13 +366,13 @@ input[type="radio"]:checked + .label_selecao .numero_card_selecao {
     position: relative;
     height: 48vh;
     width: 48vh;
-    background-color: var(--cinza-Claro);
+    background-color: var(--branco);
     position: relative;
     list-style: none;
     border-radius: 0 15px 15px 0 ;
-    box-shadow: 5px 10px 10px -2px var(--cinza2);
-    -moz-box-shadow: 5px 10px 10px -2px var(--cinza2);
-    -webkit-box-shadow: 5px 10px 10px -2px var(--cinza2);
+    box-shadow: 0 0 10px -5px var(--cinza);
+    -moz-box-shadow: 0 0 10px -5px var(--cinza);
+    -webkit-box-shadow: 0 0 10px -5px var(--cinza);
 }
 
 
@@ -393,6 +400,12 @@ input[type="radio"]:checked + .label_selecao .numero_card_selecao {
     width: 60vw;
     padding: 3.5vh;
 }
+@media screen and (max-width: 768px) {
+    .card_longo{
+        width: 90vw;
+    }
+}
+
 
 .selo_garantia{
     height: 20vh;
@@ -417,13 +430,13 @@ input[type="radio"]:checked + .label_selecao .numero_card_selecao {
     margin: auto;
 }
 .imagens_resultado{
-    width: 40%
+    width: 40vw
 }
 
 .observacao{
     font-family: 'Roboto', sans-serif;
     font-size: 1.95vh;
-    width: 55%;
+    width: 55vw;
     color: var(--cinza2);
     margin-top: 0.5vh;
     margin-bottom: 10vh;
@@ -474,7 +487,7 @@ input[type="radio"]:checked + .label_selecao .numero_card_selecao {
 }
 
 .page_5 p{
-    font-size: 1rem;
+    font-size: 2vh;   
     margin-top: 1rem;
     width: 80%;
     margin-left: 1.8rem;
@@ -534,8 +547,24 @@ input[type="radio"]:checked + .label_selecao .numero_card_selecao {
     margin-left: -1em;
 }
 
+footer{
+    background-color: var(--cinza-Claro);
+}
+.logo_rodape{
+    width: 12vw;
+}
+
+footer .observacao{
+    width: 60vw;
+    font-size: 1.5vh;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    opacity: 0.7;
+    line-height: 0.8;
+}
 .rodape{
-    width: 50%;
+    
+    width: 60vw;
     margin-top: 2vh;
     margin-bottom: 5vh;
     text-decoration: none;
@@ -546,6 +575,7 @@ input[type="radio"]:checked + .label_selecao .numero_card_selecao {
     text-decoration: none;
 }
 .texto_rodape{
+    margin-bottom: 0;
     font-size: 1.5vh;
     color: var(--cinza2);
 }
