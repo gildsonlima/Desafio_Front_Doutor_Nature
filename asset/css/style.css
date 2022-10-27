@@ -117,7 +117,7 @@ nav{
 }
 .page_2 .paragrafo{
     font-size: 2.6vh;
-    width: 75%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     color: #000;
     font-weight: 200;
@@ -127,13 +127,20 @@ nav{
 .destaque_texto{
     font-weight: 700;
 }
+@media (max-width: 678px) {
+    
+}
+    
+
 
 .imagem_doutor{
     position: absolute;
-    right: 17vw;
+    right: 16vw;
     bottom: 0;
-    height: 82%;
+    height: 82vh;
+    
     z-index: 5;
+    overflow: hidden;
 }
 
 
@@ -149,15 +156,14 @@ nav{
     font-size: 4vh;
     color: var(--branco);
     text-align: center;
-    width: 17vw;
-    background-size: 17vw;
+    width: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/mark.svg);
 }
 .page_3 .titulo{
     color: var(--branco);
     font-size: 5vh;
-    width: 60%;
     line-height: 0.8;
     margin-bottom: 6vh;
 }
